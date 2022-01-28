@@ -28,36 +28,35 @@ FROM
 	<title>
 		<band height="97">
 			<frame>
-				<reportElement mode="Opaque" x="0" y="2" width="555" height="94" forecolor="#FFFFFF" backcolor="#006699"/>
+				<reportElement mode="Opaque" x="0" y="2" width="555" height="82" forecolor="#FFFFFF" backcolor="#006699"/>
 				<staticText>
-					<reportElement x="182" y="51" width="211" height="14" forecolor="#FFFFFF"/>
+					<reportElement x="184" y="10" width="211" height="33" forecolor="#FFFFFF"/>
+					<textElement textAlignment="Center">
+						<font fontName="Adobe Garamond Pro Bold" size="24" isBold="true"/>
+					</textElement>
+					<text><![CDATA[USHUS]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="184" y="53" width="211" height="14" forecolor="#FFFFFF"/>
 					<textElement textAlignment="Center">
 						<font fontName="Arial" size="8"/>
 					</textElement>
-					<text><![CDATA[ Mob: +91 8943999920, 8943999930]]></text>
+					<text><![CDATA[ Kalluvathukkal, Kollam | Mob: +91 8089777467]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="182" y="33" width="211" height="28" forecolor="#FFFFFF"/>
+					<reportElement x="184" y="35" width="211" height="28" forecolor="#FFFFFF"/>
 					<textElement textAlignment="Center">
 						<font fontName="Arial" size="14" isBold="true"/>
 					</textElement>
 					<text><![CDATA[RESTAURANT]]></text>
 				</staticText>
-				<staticText>
-					<reportElement x="182" y="61" width="211" height="14" forecolor="#FFFFFF"/>
-					<textElement textAlignment="Center">
-						<font fontName="Arial" size="8" isBold="false"/>
-					</textElement>
-					<text><![CDATA[Govt Medical College, Pampuram, Parippally]]></text>
-				</staticText>
+				<line>
+					<reportElement x="207" y="31" width="166" height="4" forecolor="#FFFFFF"/>
+					<graphicElement>
+						<pen lineWidth="0.75" lineStyle="Dotted"/>
+					</graphicElement>
+				</line>
 			</frame>
-			<staticText>
-				<reportElement x="182" y="8" width="211" height="33" forecolor="#FFFFFF"/>
-				<textElement textAlignment="Center">
-					<font fontName="Adobe Garamond Pro Bold" size="24" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Bab Al Hind]]></text>
-			</staticText>
 		</band>
 	</title>
 	<pageHeader>

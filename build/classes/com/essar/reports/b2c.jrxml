@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Customer Bill" language="groovy" pageWidth="226" pageHeight="1600" columnWidth="224" leftMargin="1" rightMargin="1" topMargin="4" bottomMargin="4" isIgnorePagination="true">
 	<property name="ireport.zoom" value="1.3310000000000006"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="86"/>
+	<property name="ireport.y" value="0"/>
 	<import value="java.util.Date"/>
 	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
 	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
@@ -276,44 +276,44 @@ WHERE
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="138" splitType="Stretch">
+		<band height="125" splitType="Stretch">
 			<textField>
-				<reportElement style="SubTitle" x="51" y="80" width="51" height="15" forecolor="#000000"/>
+				<reportElement style="SubTitle" x="51" y="69" width="51" height="15" forecolor="#000000"/>
 				<textElement>
 					<font fontName="Arial Narrow" size="9" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{sales_bill_number}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement style="Column header" x="0" y="80" width="51" height="15"/>
+				<reportElement style="Column header" x="0" y="69" width="51" height="15"/>
 				<textElement>
 					<font fontName="Arial Narrow" size="9"/>
 				</textElement>
 				<text><![CDATA[Invoice No :]]></text>
 			</staticText>
 			<staticText>
-				<reportElement style="Column header" x="105" y="80" width="52" height="14"/>
+				<reportElement style="Column header" x="105" y="69" width="52" height="14"/>
 				<textElement textAlignment="Right">
 					<font fontName="Arial Narrow" size="9"/>
 				</textElement>
 				<text><![CDATA[Invoice Date :]]></text>
 			</staticText>
 			<textField pattern="dd/MM/yyyy">
-				<reportElement x="157" y="80" width="54" height="15"/>
+				<reportElement x="157" y="69" width="54" height="15"/>
 				<textElement>
 					<font fontName="Arial Narrow" size="9" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{sales_date}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement style="Column header" x="0" y="108" width="51" height="15"/>
+				<reportElement style="Column header" x="0" y="97" width="51" height="15"/>
 				<textElement>
 					<font fontName="Arial Narrow" size="9"/>
 				</textElement>
 				<text><![CDATA[Billed To:]]></text>
 			</staticText>
 			<textField>
-				<reportElement style="SubTitle" x="51" y="108" width="131" height="28" forecolor="#000000"/>
+				<reportElement style="SubTitle" x="51" y="97" width="131" height="28" forecolor="#000000"/>
 				<textElement>
 					<font fontName="Arial Narrow" size="9" isBold="false"/>
 				</textElement>
@@ -327,50 +327,36 @@ WHERE
 				<text><![CDATA[RESTAURANT]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="54" width="211" height="14"/>
-				<textElement textAlignment="Center">
-					<font fontName="Arial" size="8" isBold="false"/>
-				</textElement>
-				<text><![CDATA[Govt Medical College Jn, Pampuram, Parippally]]></text>
-			</staticText>
-			<staticText>
 				<reportElement x="0" y="43" width="211" height="14"/>
 				<textElement textAlignment="Center">
 					<font fontName="Arial" size="8"/>
 				</textElement>
-				<text><![CDATA[ Mob: +91 8943999920, 8943999930]]></text>
+				<text><![CDATA[ Kalluvathukkal, Kollam | Mob: +91 8089777467]]></text>
 			</staticText>
 			<image hAlign="Center" vAlign="Middle">
 				<reportElement positionType="Float" x="1" y="3" width="210" height="23"/>
-				<imageExpression><![CDATA["D:\\Applications\\Tienda\\images\\bab-al-hind.jpg"]]></imageExpression>
+				<imageExpression><![CDATA["D:\\Applications\\Tienda\\images\\ushus.jpg"]]></imageExpression>
 			</image>
 			<line>
-				<reportElement x="2" y="77" width="208" height="1"/>
+				<reportElement x="2" y="59" width="208" height="1"/>
 				<graphicElement>
 					<pen lineStyle="Dotted"/>
 				</graphicElement>
 			</line>
 			<staticText>
-				<reportElement style="Column header" x="0" y="94" width="51" height="15"/>
+				<reportElement style="Column header" x="0" y="83" width="51" height="15"/>
 				<textElement>
 					<font fontName="Arial Narrow" size="9"/>
 				</textElement>
 				<text><![CDATA[Bill Type:]]></text>
 			</staticText>
 			<textField>
-				<reportElement style="SubTitle" x="51" y="94" width="51" height="15" forecolor="#000000"/>
+				<reportElement style="SubTitle" x="51" y="83" width="51" height="15" forecolor="#000000"/>
 				<textElement>
 					<font fontName="Arial Narrow" size="9" isBold="false"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{sales_bill_type}]]></textFieldExpression>
 			</textField>
-			<staticText>
-				<reportElement x="0" y="67" width="211" height="14"/>
-				<textElement textAlignment="Center">
-					<font fontName="Arial" size="8" isBold="false"/>
-				</textElement>
-				<text><![CDATA[FSSAI License No: 21320150001165]]></text>
-			</staticText>
 		</band>
 	</title>
 	<pageHeader>
@@ -480,7 +466,7 @@ WHERE
 	<pageFooter>
 		<band height="20" splitType="Stretch">
 			<staticText>
-				<reportElement style="Column header" x="9" y="3" width="205" height="15"/>
+				<reportElement style="Column header" x="2" y="3" width="205" height="15"/>
 				<textElement textAlignment="Center">
 					<font fontName="Monotype Corsiva" size="10" isBold="false" isItalic="true" isUnderline="false"/>
 				</textElement>

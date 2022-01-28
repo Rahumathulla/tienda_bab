@@ -72,21 +72,14 @@
 					<textElement textAlignment="Center">
 						<font fontName="Adobe Garamond Pro Bold" size="24" isBold="true"/>
 					</textElement>
-					<text><![CDATA[Bab Al Hind]]></text>
+					<text><![CDATA[USHUS]]></text>
 				</staticText>
 				<staticText>
-					<reportElement x="186" y="67" width="211" height="14" forecolor="#FFFFFF"/>
-					<textElement textAlignment="Center">
-						<font fontName="Arial" size="8" isBold="false"/>
-					</textElement>
-					<text><![CDATA[Govt Medical College, Pampuram, Parippally]]></text>
-				</staticText>
-				<staticText>
-					<reportElement x="186" y="53" width="211" height="14" forecolor="#FFFFFF"/>
+					<reportElement x="186" y="57" width="211" height="14" forecolor="#FFFFFF"/>
 					<textElement textAlignment="Center">
 						<font fontName="Arial" size="8"/>
 					</textElement>
-					<text><![CDATA[ Mob: +91 8943999920, 8943999930]]></text>
+					<text><![CDATA[ Kalluvathukkal, Kollam | Mob: +91 8089777467]]></text>
 				</staticText>
 			</frame>
 		</band>

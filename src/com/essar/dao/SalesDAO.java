@@ -733,6 +733,12 @@ public class SalesDAO {
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setLong(1, salesId);
             ps.executeUpdate();
+            
+            String sqlDetail = "DELETE FROM sales_details WHERE sales_id = ? ";
+            PreparedStatement psDetail = con.prepareStatement(sqlDetail);
+            psDetail.setLong(1, salesId);
+            psDetail.executeUpdate();
+            
             System.out.println("SALES DELETE "+ps.toString());
             con.close();
             

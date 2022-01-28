@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
 	<property name="ireport.zoom" value="1.3310000000000008"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.y" value="59"/>
 	<parameter name="query_param" class="java.lang.String">
 		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
 	</parameter>
@@ -158,17 +158,10 @@
 				<textElement textAlignment="Center">
 					<font fontName="Arial" size="8"/>
 				</textElement>
-				<text><![CDATA[ Mob: +91 8943999920, 8943999930]]></text>
+				<text><![CDATA[ Kalluvathukkal, Kollam | Mob: +91 8089777467]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="191" y="54" width="211" height="14"/>
-				<textElement textAlignment="Center">
-					<font fontName="Arial" size="8" isBold="false"/>
-				</textElement>
-				<text><![CDATA[Govt Medical College, Pampuram, Parippally]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="191" y="25" width="211" height="28"/>
+				<reportElement x="191" y="25" width="211" height="18"/>
 				<textElement textAlignment="Center">
 					<font fontName="Arial" size="14" isBold="true"/>
 				</textElement>
@@ -176,15 +169,8 @@
 			</staticText>
 			<image hAlign="Center" vAlign="Middle">
 				<reportElement positionType="Float" x="191" y="2" width="211" height="23"/>
-				<imageExpression><![CDATA["D:\\Applications\\Tienda\\images\\bab-al-hind.jpg"]]></imageExpression>
+				<imageExpression><![CDATA["D:\\Applications\\Tienda\\images\\ushus.jpg"]]></imageExpression>
 			</image>
-			<staticText>
-				<reportElement x="191" y="65" width="211" height="14"/>
-				<textElement textAlignment="Center">
-					<font fontName="Arial" size="8" isBold="false"/>
-				</textElement>
-				<text><![CDATA[FSSAI License No: 21320150001165]]></text>
-			</staticText>
 		</band>
 	</title>
 	<pageHeader>

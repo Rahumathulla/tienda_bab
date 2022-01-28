@@ -236,7 +236,7 @@ WHERE
 				<textElement textAlignment="Center">
 					<font fontName="Arial" size="8"/>
 				</textElement>
-				<text><![CDATA[Bab Al Hind]]></text>
+				<text><![CDATA[USHUS Restaurant]]></text>
 			</staticText>
 			<staticText>
 				<reportElement style="Column header" x="0" y="53" width="51" height="15"/>

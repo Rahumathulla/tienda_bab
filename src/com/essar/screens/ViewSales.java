@@ -257,7 +257,7 @@ public class ViewSales extends javax.swing.JFrame implements ActionListener{
 
     private void tblSalesViewKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tblSalesViewKeyPressed
         // TODO add your handling code here:
-        if(evt.getKeyCode()== KeyEvent.VK_HOME && tblSalesView.getRowCount()>0){
+        if(evt.getKeyCode()== KeyEvent.VK_DELETE && tblSalesView.getRowCount()>0){
             mnuTable.removeAll();
             //Add Existing
             mitView = new JMenuItem("View");
@@ -510,6 +510,22 @@ public class ViewSales extends javax.swing.JFrame implements ActionListener{
     }
     
     public void syncDataFromViewToTable(){
+        Sales sales = null;
+        salesId = tblSalesView.getModel().getValueAt(tblSalesView.getSelectedRow(),tblSalesView.getColumnCount()-1).toString();
+        SalesDAO salesDAO = new SalesDAO();
+        sales = salesDAO.retrieveBySalesId(Long.parseLong(salesId));
+
+        SalesWindow salesWindow = new SalesWindow();
+        //salesWindow.fetchSalesDataIntoTable(salesDAO.retrieveByBillNumber(salesBillNumber));
+        salesWindow.repaint();
+        //salesWindow.setBounds(100, 20, 980, 680);
+        salesWindow.setExtendedState(6);
+        salesWindow.setVisible(true); 
+        salesWindow.fetchSalesDataIntoTable(sales);
+        this.dispose();
+    }
+    
+    public void deleteSalesData(){
         Sales sales = null;
         salesId = tblSalesView.getModel().getValueAt(tblSalesView.getSelectedRow(),tblSalesView.getColumnCount()-1).toString();
         SalesDAO salesDAO = new SalesDAO();
